@@ -1,7 +1,5 @@
 #include <iostream>
-
 using namespace std;
-
 
 class Devices
 {
@@ -28,7 +26,6 @@ public:
     }
 };
 
-
 class  OperAmpilifier : public Analogue
 {
 public:
@@ -51,9 +48,6 @@ private:
     int InvertedOut,NonInvertedOut, AmplifiyingKoef, OutputVoltage;
 };
 
-
-
-
 class Digital : public Devices
 {
 public:
@@ -63,28 +57,25 @@ public:
     }
 };
 
-
 class Decoder : public Digital
 {
 public:
     int Get()
     {
-        cout << "???";
+        cout << "Введіть n-розрядний код:";
         return 0;
     }
     
 private:
 };
 
-
 class BinaryAdder : public Digital
 {
 public:
     int Get()
     {
-        cout << "???";
-        return 0;
-        
+        cout << "Введіть інформаційні сигнали:";
+        return 0;   
     }
     
 private:
@@ -195,8 +186,6 @@ int main()
         cout << "Number is not valid" <<endl;
         return 0;
     }
-    
-    
     
     if (choise == 6)
     {
